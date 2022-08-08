@@ -1,4 +1,3 @@
-from calendar import c
 from random import randint
 import os
 
