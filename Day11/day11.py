@@ -47,7 +47,7 @@ def condition_game(score_player, score_computer):
     if score_player > 21:
         print("You loose")
     else:
-        if score_computer < 21:
+        if score_computer <= 21:
             if score_player < score_computer:
                 print("You loose")
             elif score_player > score_computer:
