@@ -50,3 +50,13 @@ class Snake:
     def left(self):
         if self.snake_body[0].heading() != 0:
             self.snake_body[0].setheading(180)
+
+    def add_segment(self, position):
+        new = Turtle(shape="square")
+        new.penup()
+        new.color("white")
+        new.goto(position)
+        self.snake_body.append(new)
+
+    def extend(self):
+        self.add_segment(self.snake_body[-1].position())
