@@ -32,7 +32,6 @@ while game_is_on:
 
     if answer == "Q":
         game_is_on = False
-        break
 
     if answer not in states_guessed:
         for state in data_states:
@@ -42,6 +41,5 @@ while game_is_on:
                 t.write(state)
                 score += 1
                 states_guessed.append(answer)
-        print(states_guessed)
 
 # screen.exitonclick()
