@@ -41,15 +41,18 @@ def start():
         count_down(WORK_MIN)
 
 def reset():
-    if is_pomodoro_start == False:
-        return
+    global is_pomodoro_start
 
+    if not is_pomodoro_start:
+        return
+    
     window.after_cancel(timer)
     checkmark_label.config(text="")
     timer_label.config(text="Timer")
     canvas.itemconfig(canvas_timer, text="00:00")
     global rep
     rep = 0
+    is_pomodoro_start = False
 
 def count_down(count):
     min = count // 60
