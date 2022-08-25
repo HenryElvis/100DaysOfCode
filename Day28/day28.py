@@ -1,7 +1,4 @@
-from cgitb import text
 from tkinter import *
-from time import sleep
-from math import floor
 
 PINK = "#e2979c"
 RED = "#e7305b"
