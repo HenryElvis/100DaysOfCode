@@ -1,10 +1,11 @@
 import requests
+import os
 from twilio.rest import Client
 
-KEY = "59709b06b30ca6984f3d7a9ad8da18a5"
+KEY = os.environ.get("API_KEY")
 
 ACCOUNT_SID = "ACd7b9aab0b9f3548d1077c4d18fd5a99f"
-AUTH_TOKKEN = "506158a7f21d7b1674001c58fbc81b09"
+AUTH_TOKKEN = os.environ.get("AUTH_TOKKEN")
 TEL = "+16187643829"
 
 LNG = 2.3488
