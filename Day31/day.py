@@ -39,7 +39,7 @@ def correct_button():
     else:
         word_to_learn.remove(current_card)
         new_data = pandas.DataFrame(word_to_learn)
-        new_data.to_csv("data/words_to_learn.csv")
+        new_data.to_csv("data/words_to_learn.csv", index=False)
     
     next_card()
 

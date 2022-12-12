@@ -31,6 +31,10 @@ def save():
             with open("data.json", "w") as data:
                 json.dump(new_data, data, indent=4)
 
+        except json.JSONDecodeError:
+            with open("data.json", "w") as data:
+                json.dump(new_data, data, indent=4)
+
         else:
             content.update(new_data)
 
@@ -46,7 +50,7 @@ def save():
 
 def find_password():
     user_entry = website_entry.get().capitalize()
-    
+
     try:
         with open("data.json", "r") as data:
             data_list = json.load(data)
