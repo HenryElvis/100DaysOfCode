@@ -27,7 +27,7 @@ for i in range(len(time)):
     }
 
 document_link = driver.find_element(By.LINK_TEXT, "Documentation")
-document_link.click()
+#document_link.click()
 
 #print(event)
 
