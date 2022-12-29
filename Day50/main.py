@@ -22,5 +22,13 @@ sleep(2)
 phone_login = driver.find_element(By.XPATH, '//*[@id="q-839802255"]/main/div/div[1]/div/div/div[3]/span/div[3]/button/div[2]/div[2]')
 phone_login.click()
 
-# google_login = driver.find_element(By.XPATH, '')
+# google_login = driver.find_element("iframe", {"title": "Bouton \"Se connecter avec Google\""})
 # google_login.click()
+
+sleep(2)
+
+base_window = driver.window_handles[0]
+# loggin_window = driver.window_handles[1]
+
+# driver.switch_to.window(loggin_window)
+print(driver.title)
