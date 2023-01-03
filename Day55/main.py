@@ -21,11 +21,12 @@ def make_underlined(function):
 @app.route('/')
 def hello_world():
     return '<h1 style="text-align: center">Hello, World!</h1> \
-            <p>This is a paragraph.</p>'
+            <p>This is a paragraphe.</p>'
 
 @app.route('/bye')
 @make_bold
 @make_emphasis
 @make_underlined
+
 def say_bye():
     return "Bye"
