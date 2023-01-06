@@ -1,0 +1,15 @@
+$bodyColor: grey;
+
+body
+{
+    height: max-content;
+    width: 100%;
+    background-color: $bodyColor;
+}
+
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
