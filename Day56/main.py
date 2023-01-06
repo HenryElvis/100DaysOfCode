@@ -9,3 +9,7 @@ def hello_world():
 @app.route('/template')
 def template():
     return render_template('index.html')
+
+@app.route('/personnal')
+def personal():
+    return render_template('personnal.html')
