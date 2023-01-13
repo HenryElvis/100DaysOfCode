@@ -6,4 +6,8 @@ h1 {
   font-family: "Monserrat-black";
   font-size: 3rem;
   line-height: 1.5;
+}
+
+.container-fluid {
+  padding: 3% 15%;
 }/*# sourceMappingURL=styles.css.map */
